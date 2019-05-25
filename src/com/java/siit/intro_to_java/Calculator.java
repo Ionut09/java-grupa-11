@@ -1,4 +1,4 @@
-package com.java.siit;
+package com.java.siit.intro_to_java;
 
 import java.util.Scanner;
 
