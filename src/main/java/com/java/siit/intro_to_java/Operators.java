@@ -1,8 +1,9 @@
 package com.java.siit.intro_to_java;
 
 /**
- yduhbduhbweu
- @author ionut
+ * yduhbduhbweu
+ *
+ * @author ionut
  */
 public class Operators {
     public static void main(String[] args) {
@@ -36,29 +37,29 @@ public class Operators {
 //        System.out.println(--d);
 
 
-        int q=12, w=15;
-        q+=4;
+        int q = 12, w = 15;
+        q += 4;
         w++;
         System.out.println(q);
         System.out.println(w);
 
-        double ternar = (q>w) ? 3.2 : 1.2; //ternar
+        double ternar = (q > w) ? 3.2 : 1.2; //ternar
         System.out.println(ternar);
-        computeArea(2,4);
-        Operators.computeArea(2,3);
+        computeArea(2, 4);
+        Operators.computeArea(2, 3);
 
     }
 
 
     /**
      * O metoda care calculeaza aria
+     *
      * @param a latimea
      * @param b lungimea
      * @author Ionut
-     * @throws
      */
-    private static void computeArea(int a, int b){
-        System.out.println("Area is: " + (a*b));
+    private static void computeArea(int a, int b) {
+        System.out.println("Area is: " + (a * b));
     }
 
 

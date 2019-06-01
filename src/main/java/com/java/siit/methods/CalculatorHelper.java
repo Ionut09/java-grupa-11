@@ -1,17 +1,13 @@
-package com.java.siit.intro_to_java;
+package com.java.siit.methods;
 
-import java.util.Scanner;
+public class CalculatorHelper {
 
-public class Calculator {
+    int a;
 
-    public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
-        System.out.println("Introduceti primul numar: ");
-        int n1 = scanner.nextInt();
-        System.out.println("Introduceti al doilea numar: ");
-        int n2 = scanner.nextInt();
-        System.out.println("Introduceti operatia dorita: ");
-        String operation = scanner.next();
+
+    static void calculator(int n1, int n2, String operation) {
+        CalculatorHelper calculatorHelperObject = new CalculatorHelper();
+        calculatorHelperObject.a += 2;
 
         switch (operation) {
             case "+": //in case-uri se pot folosi numere intregi si stringuri si booleeni
@@ -29,7 +25,6 @@ public class Calculator {
             default:
                 System.out.println("Bad operation!");
         }
-
 
     }
 }
