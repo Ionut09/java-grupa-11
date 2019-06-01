@@ -22,8 +22,8 @@ public class Calculator {
 
         calculator((int) 2.3, second, sign);
 
-        calculator(5, 6, "*");
-
+        int result = calculator(5, 6, "*");
+        System.out.println(result);
 
         System.out.println("La revedere!");
     }
