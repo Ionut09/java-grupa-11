@@ -5,6 +5,7 @@ import com.java.siit.oop.Color;
 public class Shape {
     Color color;
 
+
     public void draw() {
         System.out.println("Shape moves");
     }

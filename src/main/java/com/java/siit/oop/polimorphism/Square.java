@@ -1,7 +1,6 @@
 package com.java.siit.oop.polimorphism;
 
 public class Square extends Shape {
-    @Override
     public void draw() {
         System.out.println("Square draws");
     }
