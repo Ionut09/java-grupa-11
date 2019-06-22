@@ -13,8 +13,8 @@ import lombok.ToString;
 @EqualsAndHashCode
 public class Car {
     //@EqualsAndHashCode.Exclude
-    private boolean broken;
     private String model;
-    //@ToString.Exclude
     private String plate;
+    private boolean broken;
+    //@ToString.Exclude
 }
