@@ -11,7 +11,9 @@ public class CastExamples {
     public static void main(String[] args) {
         //cast example
         Shape circle = new Circle();
-        Circle castedCircle = (Circle) circle;
+        Circle castedCircle = (Circle) circle;//down casting
+
+        Shape shape = castedCircle;// up cast
         castedCircle.moveCircle();
 
         //((Circle) circle).moveCircle();

@@ -10,4 +10,8 @@ public class Square extends Shape {
         System.out.println("Square moves");
 
     }
+
+    public void square(){
+        System.out.println("square");
+    }
 }
