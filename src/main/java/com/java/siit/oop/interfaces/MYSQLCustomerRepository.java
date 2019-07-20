@@ -6,7 +6,7 @@ import java.util.List;
 public class MYSQLCustomerRepository implements CustomerRepository {
 
     @Override
-    public List<Customer> findAllCustomersByName(String name) throws {
+    public List<Customer> findAllCustomersByName(String name)  {
         return Collections.emptyList();
     }
 

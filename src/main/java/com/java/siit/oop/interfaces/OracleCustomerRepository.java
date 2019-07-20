@@ -12,7 +12,7 @@ public class OracleCustomerRepository implements CustomerRepository {
 
         LinkedList<Customer> customers = new LinkedList<>();
         return customers;
-        //covariant adica subtip
+        //covariant adica subtip de-al lui List
     }
 
     @Override
