@@ -16,7 +16,12 @@ public class Zoo {
         animals.add(new Fish());
         animals.add(new Kangoroo());
         animals.add(new Lion());
-        //boolean test(Animal t)
+
+//        short s = Short.MAX_VALUE;
+//        char c = (char) s;
+//        System.out.println( c == Short.MAX_VALUE);
+
+        //boolean test(Animal t) -- semnatura metodei test din Predicate
         printAnimals(animal -> animal.canSwim());
 
         //echivalent cu
@@ -33,15 +38,15 @@ public class Zoo {
 
 
     static void printAnimals(Predicate<Animal> haveACertainFeature) {
-        for(Animal animal: animals){
-            if(haveACertainFeature.test(animal)){
+        for (Animal animal : animals) {
+            if (haveACertainFeature.test(animal)) {
                 System.out.println(animal);
             }
         }
     }
 }
 
-class AnimalChecker implements Predicate<Animal>{
+class AnimalChecker implements Predicate<Animal> {
     @Override
     public boolean test(Animal animal) {
         return animal.canSwim();
