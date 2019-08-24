@@ -25,7 +25,7 @@ public class StreamsEx {
         //stringStream.count();  java.lang.IllegalStateException: stream has already been operated upon or closed
         System.out.println(String.valueOf(35));
 
-        var chareactersList =
+        HashSet<String> chareactersList =
                 names.stream()
                      .map(name -> name.split(""))
                      .flatMap(arrayDeCaractereDintr_unWord -> Arrays.stream(arrayDeCaractereDintr_unWord))
@@ -34,9 +34,9 @@ public class StreamsEx {
                      .distinct()
                      //.collect(toSet());
                      .collect(Collectors.toCollection(HashSet::new));
-                     //.collect(Collectors.toCollection(ArrayList::new));
-                     //.collect(Collectors.toList());
-                    // .collect(Collectors.toSet());
+        //.collect(Collectors.toCollection(ArrayList::new));
+        //.collect(Collectors.toList());
+        // .collect(Collectors.toSet());
         System.out.println(chareactersList);
 
         lazyEvaluation();
@@ -66,7 +66,6 @@ public class StreamsEx {
 
         long namesNumber = stringStream.count(); // 4
         System.out.println("contain letter a --> " + namesNumber);
-
 
 
     }
