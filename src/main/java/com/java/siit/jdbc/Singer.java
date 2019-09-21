@@ -29,3 +29,4 @@ public class Singer implements Serializable {
     private long id;
     private String lastName;
 }
+
